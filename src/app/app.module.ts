@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './formulario/formulario.component';
 import { WelcomeComponent } from './formulario/welcome/welcome.component';
 import { QuestionsComponent } from './formulario/questions/questions.component';
 import { DespedidaComponent } from './formulario/despedida/despedida.component';
@@ -11,7 +10,6 @@ import { DespedidaComponent } from './formulario/despedida/despedida.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent,
     WelcomeComponent,
     QuestionsComponent,
     DespedidaComponent
