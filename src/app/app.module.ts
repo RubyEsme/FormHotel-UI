@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './formulario/welcome/welcome.component';
 import { QuestionsComponent } from './formulario/questions/questions.component';
 import { DespedidaComponent } from './formulario/despedida/despedida.component';
+import { FirstQuestionsComponent } from './formulario/first-questions/first-questions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     QuestionsComponent,
-    DespedidaComponent
+    DespedidaComponent,
+    FirstQuestionsComponent
   ],
   imports: [
     BrowserModule,

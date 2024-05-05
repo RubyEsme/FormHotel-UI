@@ -1,12 +1,10 @@
-export interface Question {
+export interface FirstQuestion {
   _id: string;
   question: string;
   answer: Answer[];
 }
 
 export interface Answer {
-  id: string;
   answer: string;
-  count: number;
 
 }
