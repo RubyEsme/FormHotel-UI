@@ -1,17 +1,3 @@
-body {
-  background-image: url('../../../assets/backgroundCool.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  height: 97vh;
-  width: 217vh;
-  margin: 0; /* Remove default body margin */
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
-}
 .container{
   color: white;
   background-color: #142435;
@@ -29,7 +15,7 @@ body {
 }
 .TextoInicial{
   color:white;
-  font-size: 360%;
+  font-size: 40px;
   font-weight: 800;
 
 }

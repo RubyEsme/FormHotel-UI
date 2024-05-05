@@ -3,18 +3,34 @@
   <head>
     <title>BIENVENIDO!</title>
   </head>
-  <body>
-    <div class="backgroundBody">
-      <div class="container">
-        <div class="TextoInicial">Bienvenido a nuestro formulario</div>
-        <div class="TextoCentro"> Lorem ipsum dolor  sit amet, consectetur adipiscing elit, <br>
-           sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad <br>
-           minim veniam, quis nostrud  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
-           <button class="buttonIngreso" routerLink="/Form"> Ingresar</button>
+  <body class="">
+    <div
+      class="flex justify-center items-center h-screen "
+    >
+      <div
+        class="text-white bg-[#142435] flex flex-col p-10 justify-center items-center gap-16 w-[800px] h-[520px] rounded-2xl shadow-2xl shadow-black"
+      >
+        <h1 class="text-5xl font-bold text-center">
+          Bienvenido a nuestro formulario
+        </h1>
+        <p class="text-xl">
+          El propósito de este cuestionario es obtener información crucial sobre
+          las dificultades y desafíos que los profesionales de la hotelería
+          enfrentan en su día a día. Tu experiencia y perspectiva son
+          fundamentales para identificar áreas de mejora y oportunidades de
+          crecimiento en este sector tan dinámico y exigente. Por favor,
+          responde con honestidad y franqueza. No hay respuestas correctas o
+          incorrectas; tu opinión es lo que importa. Tus respuestas serán
+          tratadas de manera confidencial y se utilizarán únicamente con fines
+          de investigación.
+        </p>
+        <button
+          class="text-white font-bold text-xl bg-[#064789] px-5 py-3 rounded-full shadow-2xl shadow-black hover:bg-[#04325F]"
+          routerLink="/Form"
+        >
+          Ingresar
+        </button>
       </div>
-
     </div>
-
   </body>
-  <footer></footer>
 </html>
