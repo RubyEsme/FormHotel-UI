@@ -1,0 +1,44 @@
+body {
+  background-image: url('../../../assets/backgroundCool.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 97vh;
+  width: 217vh;
+  margin: 0; /* Remove default body margin */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+.container{
+  color: white;
+  background-color: #142435;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+}
+.TextoCentro{
+  color: white;
+  margin-top: 7%;
+  font-size: 150%;
+
+
+}
+.TextoInicial{
+  color:white;
+  font-size: 360%;
+  font-weight: 800;
+
+}
+.buttonIngreso{
+  background-color: #064789;
+  color:white;
+  width: 40%;
+  height: 105%;
+  border-radius: 10%;
+  margin-left: 30%;
+  margin-top:3%;
+}
