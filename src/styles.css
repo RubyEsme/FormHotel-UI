@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url('./assets/backgroundCool.jpg');
+  background-image: url('./assets/backgroundAll.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
