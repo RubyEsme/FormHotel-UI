@@ -10,7 +10,7 @@
       <form class=" ">
         <div
           *ngFor="let question of questions"
-          class="mb-6 p-10 gap-y-4 bg-[#142435] rounded-2xl shadow-xl shadow-black"
+          class="mb-6 p-10 gap-y-4 bg-[#0F1113] rounded-2xl shadow-xl shadow-black"
         >
           <div class="flex flex-col gap-y-2">
             <h3 class="text-3xl font-bold">Pregunta {{ question._id + 1 }}</h3>
@@ -19,7 +19,7 @@
             </div>
             <div
               *ngFor="let option of question.answer"
-              class="flex items-center my-2 bg-[#427AA1] hover:bg-[#305976] py-4 px-4 rounded-2xl shadow-md shadow-black"
+              class="flex items-center my-2 bg-[#D9A521] hover:bg-[#305976] py-4 px-4 rounded-2xl shadow-md shadow-black"
             >
               <input
                 type="radio"
@@ -38,7 +38,7 @@
           <button
             type="button"
             routerLink="/Despedida"
-            class="bg-[#064789] text-white font-bold px-5 py-3 rounded-3xl shadow-2xl shadow-black hover:bg-[#04325F] text-xl mb-5"
+            class="bg-[#D9A521] text-white font-bold px-5 py-3 rounded-3xl shadow-2xl shadow-black hover:bg-[#04325F] text-xl mb-5"
           >
             Enviar
           </button>
