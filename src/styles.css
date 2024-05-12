@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('./assets/backgroundAll.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Remove default body margin */
+}

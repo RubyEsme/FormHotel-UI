@@ -1,0 +1,30 @@
+.container{
+  color: white;
+  background-color: #142435;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+}
+.TextoCentro{
+  color: white;
+  margin-top: 7%;
+  font-size: 150%;
+
+
+}
+.TextoInicial{
+  color:white;
+  font-size: 40px;
+  font-weight: 800;
+
+}
+.buttonIngreso{
+  background-color: #064789;
+  color:white;
+  width: 40%;
+  height: 105%;
+  border-radius: 10%;
+  margin-left: 30%;
+  margin-top:3%;
+}
