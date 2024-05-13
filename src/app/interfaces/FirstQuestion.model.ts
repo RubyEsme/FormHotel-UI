@@ -1,10 +1,10 @@
 export interface FirstQuestion {
-  _id: string;
+  _id: number;
   question: string;
   answer: Answer[];
 }
 
 export interface Answer {
-  answer: string;
+  answer: string | null;
 
 }
