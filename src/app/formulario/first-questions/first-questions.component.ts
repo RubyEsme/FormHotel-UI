@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { FirstQuestion } from 'src/app/interfaces/FirstQuestion.model';
 import { AnswersToSend, firstAnswers } from 'src/app/interfaces/answersToSend.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-first-questions',
@@ -17,7 +18,7 @@ export class FirstQuestionsComponent {
   questionAnswers: { [questionId: number]: string } = {};
  // Initialize questionAnswers
 
-  constructor( private dataService: DataService){
+  constructor( private dataService: DataService, private router: Router){
 
   }
 
@@ -52,6 +53,8 @@ export class FirstQuestionsComponent {
         console.log('Answers sent successfully');
         console.log('Payload sent:', payload);
         this.firstAnswerstoSend = []; // Reset array after successful submission
+         // Navigate to the desired route programmatically
+        this.router.navigate(['/Form']); // Replace 'target-route' with your desired route
       }, (error: any) => {
         console.error('Error sending answers:', error);
       });
