@@ -25,8 +25,9 @@
                 type="radio"
                 [value]="option.answer"
                 name="question{{ question._id }}"
-                id="option{{ option.answer }}"
+                id="option{{ option.id }}"
                 class="mr-2 w-6 h-auto bg-white"
+                (change)="optionSelected(question._id, option.id)"
               />
               <label for="option{{ option.answer }}" class="text-xl">{{
                 option.answer
@@ -39,7 +40,8 @@
             type="button"
             routerLink="/Despedida"
             class="bg-gradient-to-r from-[#D96F21] to-[#D9A521]  text-white font-bold px-10 py-3 rounded-3xl shadow-2xl  shadow-black text-xl mb-5"
-          >
+            (click)="onSubmit()"
+            >
             Enviar
           </button>
         </div>

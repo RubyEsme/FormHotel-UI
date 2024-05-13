@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Question } from './interfaces/question.model';
 import { FirstQuestion } from './interfaces/FirstQuestion.model';
+import { SelectedOptionsUpdate, SelectedOption} from './interfaces/selected-option.model';
+import { AnswersToSend } from './interfaces/answersToSend.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +22,12 @@ export class DataService {
     return this.http.get<FirstQuestion[]>(`${this.apiUrl}/firstQuestions`);
   }
 
-  // updateChoiceCount(questionId: string, choiceIndex: number): Observable<any> {
-  //   return this.http.put(`${this.apiUrl}/questions/${questionId}/choices/${choiceIndex}/increment`, {});
-  // }
+  sendSelectedOptions(selectedOptions: SelectedOptionsUpdate): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/questions/update-answer-count`, selectedOptions);
+  }
+
+  sendFirstQuestions(sendFirstQuestions: AnswersToSend): Observable<AnswersToSend> {
+    return this.http.put<any>(`${this.apiUrl}/firstQuestions/send-answer`, sendFirstQuestions);
+  }
+
 }
