@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Question } from './interfaces/question.model';
 import { FirstQuestion } from './interfaces/FirstQuestion.model';
+import { ClientQuestions } from './interfaces/clientQuestions.model';
 import { SelectedOptionsUpdate, SelectedOption} from './interfaces/selected-option.model';
 import { AnswersToSend } from './interfaces/answersToSend.model';
 
@@ -28,6 +29,9 @@ export class DataService {
 
   sendFirstQuestions(sendFirstQuestions: AnswersToSend): Observable<AnswersToSend> {
     return this.http.put<any>(`${this.apiUrl}/firstQuestions/send-answer`, sendFirstQuestions);
+  }
+  getClientQuestions(): Observable<ClientQuestions[]>{
+    return this.http.get<ClientQuestions[]>(`${this.apiUrl}/clientQuestions`);
   }
 
 }
