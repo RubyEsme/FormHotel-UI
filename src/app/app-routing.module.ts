@@ -5,10 +5,12 @@ import { QuestionsComponent } from './formulario/questions/questions.component';
 import { DespedidaComponent } from './formulario/despedida/despedida.component';
 import { FirstQuestionsComponent } from './formulario/first-questions/first-questions.component';
 import { FormClientComponent } from './form-client/form-client.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 const routes: Routes = [
   {path: 'Bienvenida', component: WelcomeComponent },
+  {path: 'Inicio', component: InicioComponent},
   {path: 'About', component: FirstQuestionsComponent},
   {path:  'Form', component: QuestionsComponent},
   {path: 'Despedida', component: DespedidaComponent},
