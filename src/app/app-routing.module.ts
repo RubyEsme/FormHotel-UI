@@ -4,6 +4,7 @@ import { WelcomeComponent } from './formulario/welcome/welcome.component';
 import { QuestionsComponent } from './formulario/questions/questions.component';
 import { DespedidaComponent } from './formulario/despedida/despedida.component';
 import { FirstQuestionsComponent } from './formulario/first-questions/first-questions.component';
+import { FormClientComponent } from './form-client/form-client.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'About', component: FirstQuestionsComponent},
   {path:  'Form', component: QuestionsComponent},
   {path: 'Despedida', component: DespedidaComponent},
+  {path: 'Clientes', component: FormClientComponent},
   //{path: 'About You', component: AboutUser},
   {path: '**', redirectTo: 'Bienvenida'}
 

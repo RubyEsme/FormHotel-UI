@@ -30,8 +30,13 @@ export class DataService {
   sendFirstQuestions(sendFirstQuestions: AnswersToSend): Observable<AnswersToSend> {
     return this.http.put<any>(`${this.apiUrl}/firstQuestions/send-answer`, sendFirstQuestions);
   }
+
   getClientQuestions(): Observable<ClientQuestions[]>{
     return this.http.get<ClientQuestions[]>(`${this.apiUrl}/clientQuestions`);
+  }
+
+  sendClientQuestions(sendClientQuestions: SelectedOptionsUpdate): Observable<AnswersToSend> {
+    return this.http.put<any>(`${this.apiUrl}/clientQuestions/update-answer-count`, sendClientQuestions);
   }
 
 }
