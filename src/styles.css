@@ -4,8 +4,7 @@
 @tailwind utilities;
 
 body {
-  background-image: linear-gradient(to bottom, #020206 75%, #DAA520 100%);
-  background-size: cover;
+  background-image: linear-gradient(to bottom, #020206 25%, #DAA520 50%, #020206 75%);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
