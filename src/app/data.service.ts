@@ -6,12 +6,13 @@ import { FirstQuestion } from './interfaces/FirstQuestion.model';
 import { ClientQuestions } from './interfaces/clientQuestions.model';
 import { SelectedOptionsUpdate, SelectedOption} from './interfaces/selected-option.model';
 import { AnswersToSend } from './interfaces/answersToSend.model';
+import { environment } from '../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:4000'; // Replace this with your API URL
+  private apiUrl = environment.apiUrl; // Replace this with your API URL
 
   constructor(private http: HttpClient) { }
 
